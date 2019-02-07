@@ -1,0 +1,125 @@
+h3{
+	color:white;
+	background-color:gray;
+	border:10px ridge gray; /* width style color */
+}
+
+#parent p:first-child{
+	color:green;
+	text-decoration:underline;
+	
+}
+
+#parent p:last-child{
+	color:green;
+	text-decoration:underline;
+}
+
+#parent p:before{
+	color:red;
+	content:"I am before ";
+}
+
+#parent p:after{
+	color:blue;
+	content:" I am after";
+}
+
+#parent p:nth-child(2n){ /* The parameter can be 1,4,3n,even,odd,.. */
+	background-color:yellow;
+	color:gray;
+}
+
+a{
+	color:green; 
+	text-decoration:none;
+}
+
+a:hover{
+	color:red;
+	text-decoration:underline;
+}
+
+a:active{
+	color:orange;
+}
+
+a:visited{
+	color:pink;
+	text-decoration:none;
+}
+
+ul{
+	list-style-type:circle; /*disc, circle, square, decimal, lower-greek, katakana,...*/
+	/* list-style-image:url(image.png); --> satır başındaki sembolleri resimle gösterme */	
+	list-style-position:inside; /*inside, outside,...*/
+	line-height:300%
+}
+
+.rounded_box{
+	background-color:#0299ef;
+	width:200px;
+	text-align:center;
+	padding:50px 0px;
+	border-radius:30px;/*border-bottom-left-radius, border-bottom-right-radius,
+						border-top-left-radius, border-top-right-radius*/
+	background-image:linear-gradient(to top, #04507b 20%, #0072b4 40%, #018ad9 40%, #00a2ff 100%);
+	/*linear-gradient(direction,color percentage,color percentage,...)*/
+}
+
+.pic{
+	float:left; /* Resmin solda ve paragrafların da resmin yanında yer almasını sağlar. */
+}
+
+.par2{
+	clear:left; 
+	/* Paragrafın metinden sonra sola hizalı yazılmasını sağlar. 
+	left yerine right, both,... yazılabilir. */
+}
+
+.left_column{
+		float:left;
+		background-color:white-space;
+		border:5px ridge blue;
+		height:133px;
+		width:300px;
+		color:white;
+		text-align:center;
+		margin:10px;
+		background-image:url(one.png);
+}
+
+.middle_column{	
+		float:left;
+		background-color:red;
+		height:400px;
+		width:400px;
+		color:white;
+		text-align:center;
+		margin:10px;
+		background-image:url(two.png);
+}
+
+.right_column{	
+		float:right;
+		background-color:orange;
+		height:400px;
+		width:400px;
+		color:white;
+		text-align:center;
+		margin:10px;
+		background-image:url(three.png);
+}
+
+.middle2_column{
+		float:right;
+		background-color:green;
+		height:367px;
+		width:522px;
+		color:white;
+		text-align:center;	
+		margin:10px;
+		background-image:url(four.png);
+}
+
+

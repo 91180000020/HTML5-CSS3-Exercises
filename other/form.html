@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Form Elements</title>
+		<link rel="stylesheet" href="form.css"/>
+	</head>
+	<body>
+		<form action="" method="get">
+			Username: <input type="text" name="username" maxlength="10" value="default" size="10" />
+			<!-- value ifadesi textfield'taki default değeri atamak için kullanılır. -->
+			Password: <input type="password" name="password" maxlength="10" size="10" />
+			
+			<hr/>
+			<h2>Select Lists</h2>
+			Pick a Food:
+			<select name="food" multiple size="5">
+				<optgroup label="salty food">
+					<option value="patato_chips">Patato Chips</option>
+					<option value="popcorn" selected="selected">Popcorn</option>	
+					<option value="peanuts">Peanuts</option>	
+				</optgroup>
+				<optgroup label="hot food">
+					<option value="nachos" selected="selected">Nachos</option>	
+					<option value="pizza">Pizza</option>
+				</optgroup>
+			</select>
+			<hr/>
+			<h2>Checkboxes & Radio buttons </h2>
+			What do you do in your spare time?<br/>
+			Play sport <input type="checkbox" name="spare_time[]" value="sport" checked="checked" />
+			Play computer games <input type="checkbox" name="spare_time[]" value="games" />
+			Shopping <input type="checkbox" name="spare_time[]" value="shopping" />
+			
+			<br/><br/>
+			
+			Do you play league of legends?<br/>
+			Yes <input type="radio" name="plays_lol" value="yes" checked="checked" />
+			No <input type="radio" name="plays_lol" value="no" />
+		
+			<hr/>
+			<h2> Text Area</h2>
+			
+			Tell me a story:<br/>
+			<textarea name="story" rows="15" cols="60" ></textarea>
+			
+			<hr/>
+			<h2> Buttons </h2>
+			
+			<input type="button" value="This is a button"/>
+			<br/><br/>
+			Name: <input type="text" name="name"/><br/><br/>
+			Password: <input type="password" name="password"/><br/><br/>
+			Checkboxes:<br/>
+			1 <input type="checkbox" value="1" name="checker" />
+			2 <input type="checkbox" value="2" name="checker" />
+			3 <input type="checkbox" value="3" name="checker" />
+			<br/>
+			<input type="file"/><br/>
+			<input type="submit" value="Submit" /><br/> 
+			<!-- file:///C:/Users/Rabia/Desktop/HTML5&CSS3/other/form.html?username=default&password=&food=popcorn&food=nachos&spare_time%5B%5D=sport&plays_lol=yes&story=&name=rabia&password=123&checker=1&checker=2 
+			veriler girilip submit butonuna basıldığında url'de yer alan değer -->
+			<input type="reset" value="Reset" />
+			<!-- veriler girilip reset butonuna basıldığında tüm alanları resetler -->
+			
+			<hr/>
+			<h2> Labels & Field sets </h2>
+			
+			<fieldset class="pers_info">
+				<legend>Personal Information:</legend>
+				<p>
+					<label for="first_name"> First Name:</label>
+					<input type="text" id="first_name" />
+				</p>
+				<p>
+					<label for="last_name"> Last Name: </label> 
+					<input type="text" name="last_name" id="last_name" />
+				</p>
+				<p>
+					<label for="email"> Email: </label> 
+					<input type="text" name="email" id="email" />
+				</p>
+				<p>
+					<label for="city"> City: </label> 
+					<input type="text" name="city" id="city" />
+				</p>
+				<p>
+					<label for="address"> Address: </label> 
+					<input type="text" name="address" id="address" />
+				</p>
+				
+			</fieldset>
+			<br/>
+			<fieldset>
+				<legend>Hobbies:</legend>
+				<label for="sport">Sport</label><input type="checkbox" value="sport" name="sport" id="sport"/>
+				<label for="gaming">Gaming</label><input type="checkbox" value="gaming" name="gaming" id="gaming"/>
+				<label for="art">Art</label><input type="checkbox" value="art" name="art" id="art"/>
+				<label for="acting">Acting</label><input type="checkbox" value="acting" name="acting" id="acting"/>
+			</fieldset>
+			<br/>
+			<input type="submit" value="Submit" class="submit_btn"/>
+			<input type="reset" value="Reset" class="reset_btn" />
+		</form>
+		
+		
+	</body>
+</html>

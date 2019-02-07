@@ -1,0 +1,26 @@
+fieldset{
+	width:300px;
+	background-color:orange; 
+}
+
+fieldset legend{
+	font-weight:bold;
+	font-size:20px;
+}
+
+.pers_info label{
+	float:left;
+	width:100px;
+	text-align:center;
+	margin-right:10px;
+}
+
+.submit_btn{
+	color:white;
+	background-color:blue;
+}
+
+.reset_btn{
+	color:white;
+	background-color:red;
+}
